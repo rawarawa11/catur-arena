@@ -1,0 +1,99 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffe0f0, #ff97d9); /* Gradasi warna pink */
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 40px; /* Header tetap dengan padding besar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px; /* Ukuran logo tetap besar */
+    font-weight: bold;
+    color: #ea0085; /* Logo menggunakan warna pink gelap */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Ruang antar menu tetap lebar */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Warna teks menu tetap netral */
+    font-size: 18px;
+}
+
+nav ul li a.get-started {
+    background-color: #ea0085; /* Warna tombol pink */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 40px; /* Padding bagian utama tetap lebar */
+    color: #333;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.content h1 {
+    font-size: 48px; /* Heading tetap besar */
+    margin: 0 0 20px;
+    color: #ea0085; /* Heading menggunakan warna pink gelap */
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0 0 20px;
+    color: #555; /* Paragraf tetap menggunakan warna abu-abu lembut */
+}
+
+.content button {
+    background-color: #ea0085; /* Tombol dengan warna pink */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.content button:hover {
+    background-color: #d10078; /* Warna tombol saat hover lebih gelap */
+}
+
+.illustration {
+    width: 50%; /* Ukuran ilustrasi tetap proporsional */
+    text-align: center;
+}
+
+.illustration img {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* Ilustrasi tetap besar */
+}

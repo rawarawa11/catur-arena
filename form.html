@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pendaftaran Lomba Catur</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pendaftaran Lomba Catur</h1>
+        <form action="proses_data.php" method="post">
+            <!-- Data Pribadi -->
+            <div class="form-section">
+                <h2>Data Pribadi</h2>
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan alamat email Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="telepon">Nomor Telepon:</label>
+                    <input type="tel" id="telepon" name="telepon" placeholder="Masukkan nomor telepon Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="tanggal-lahir">Tanggal Lahir:</label>
+                    <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
+                </div>
+                <div class="form-group">
+                    <label for="jenis-kelamin">Jenis Kelamin:</label>
+                    <select id="jenis-kelamin" name="jenis-kelamin" required>
+                        <option value="">Pilih Jenis Kelamin</option>
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Kategori Lomba Catur -->
+            <div class="form-section">
+                <h2>Kategori Lomba Catur</h2>
+                <div class="form-group">
+                    <label for="kategori-lomba">Pilih Kategori Catur:</label>
+                    <select id="kategori-lomba" name="kategori-lomba" required>
+                        <option value="">Pilih Kategori</option>
+                        <option value="pemula">Pemula</option>
+                        <option value="menengah">Menengah</option>
+                        <option value="profesional">Profesional</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Pembayaran -->
+            <div class="form-section">
+                <h2>Pembayaran</h2>
+                <div class="form-group">
+                    <label for="metode-pembayaran">Metode Pembayaran:</label>
+                    <select id="metode-pembayaran" name="metode-pembayaran" required>
+                        <option value="">Pilih Metode Pembayaran</option>
+                        <option value="transfer-bank">Transfer Bank</option>
+                        <option value="e-wallet">E-Wallet</option>
+                        <option value="kartu-kredit">Kartu Kredit</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Status -->
+            <div class="form-section">
+                <h2>Status</h2>
+                <div class="form-group">
+                    <div class="radio-group">
+                        <input type="radio" id="pelajar" name="status" value="Pelajar">
+                        <label for="pelajar">Pelajar</label>
+                        <input type="radio" id="mahasiswa" name="status" value="Mahasiswa">
+                        <label for="mahasiswa">Mahasiswa</label>
+                        <input type="radio" id="pekerja" name="status" value="Pekerja">
+                        <label for="pekerja">Pekerja</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pesan dan Komentar -->
+            <div class="form-section">
+                <h2>Pesan & Saran</h2>
+                <div class="form-group">
+                    <textarea id="pesan" name="pesan" rows="4" placeholder="Cantumkan Pesan & Saran Anda disini"></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Kirim Pendaftaran</button>
+        </form>
+    </div>
+</body>
+</html>

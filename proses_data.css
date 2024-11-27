@@ -1,0 +1,107 @@
+/* General Style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ecafd2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container untuk Pesan */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Link Styling */
+a {
+    color: #ea0085;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Success Message */
+.success {
+    background-color: #f5ddea;
+    color: #f571bc;
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Error Message */
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #ea0085;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: #d10078;
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
