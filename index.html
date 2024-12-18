@@ -7,13 +7,31 @@
     <link rel="stylesheet" href="indexstyle.css">
 </head>
 <body>
+        <style>
+        /* Tambahkan gaya untuk menu kontak */
+        .contact-info {
+            display: none; /* Default disembunyikan */
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
     <header>
         <div class="container">
             <div class="logo">Catur Arena</div>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Kontak</a></li>
+                    <li>
+                        <a href="#" id="contact-btn">Kontak</a>
+                        <div class="contact-info" id="contact-info">
+                            Hubungi kami di: <br> +62-812-3456-7890
+                        </div>
+                    </li>
                     <li><a href="#">About us</a></li>
                     <li><a href="login.html" class="get-started">Login</a></li>
                     <li><a href="signup.html" class="get-started">Sign up</a></li>
