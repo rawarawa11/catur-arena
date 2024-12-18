@@ -49,5 +49,19 @@
             <img src="main-catur.png" alt="Illustration">
         </div>
     </main>
+        <script>
+        // Tangani klik menu kontak
+        document.getElementById('contact-btn').addEventListener('click', function (event) {
+            event.preventDefault(); // Mencegah aksi default (navigasi)
+
+            // Toggle tampilan informasi kontak
+            const contactInfo = document.getElementById('contact-info');
+            if (contactInfo.style.display === 'none' || contactInfo.style.display === '') {
+                contactInfo.style.display = 'block';
+            } else {
+                contactInfo.style.display = 'none';
+            }
+        });
+    </script> 
 </body>
 </html>
